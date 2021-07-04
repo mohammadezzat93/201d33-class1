@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1 </title>
+
+    <style>
+        body{
+            color: white;
+            background-color: burlywood;
+            font-family: Arial;
+        }
+
+        .cen{
+            text-align: center;
+        }
+        input{
+            padding: 5px;
+            margin-top: 20px;
+        }
+        footer{
+            background-color: tomato;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <h1 style=" text-align: center; color: brown;"> welcome To My Page </h1>
+
+    </header>
+
+    <main>
+
+        
+
+        <div class="cen">
+        <form action="/action_page.php">
+            <label>First name :</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label>password :</label>
+            <input type="password" id="pass" name="pass"><br><br>
+            <input style=" color:red" type="submit" value="Submit"><br><br><br>
+          </form>
+        </div> 
+
+    </main>
+    <footer>
+
+        &copy; 2021ASAC
+
+        <script>
+
+            let userName = prompt('what\'s Your Name ? ');
+            console.log('Welcome '+ userName);
+            alert('Welcome ' + userName);
+        
+            let age = prompt('what\'s Your Age ? ');
+            console.log('Your Age is : '+ age);
+            alert('Hi ' + userName + ' Your Age is : '+ age);
+        
+        
+        </script>
+
+    </footer>
+
+    
+</body>
+</html>
