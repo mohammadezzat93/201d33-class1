@@ -11,17 +11,19 @@
             color: white;
             background-color: burlywood;
             font-family: Arial;
+            text-align: center;
+            font-size: 20px;
         }
 
-        .cen{
+        /* .cen{
             text-align: center;
-        }
+        } */
         input{
             padding: 5px;
             margin-top: 20px;
         }
-        footer{
-            background-color: tomato;
+        span{
+           color: blueviolet;
             text-align: center;
         }
 
@@ -40,7 +42,7 @@
 
         
 
-        <div class="cen">
+        <!-- <div class="cen">
         <form action="/action_page.php">
             <label>First name :</label>
             <input type="text" id="fname" name="fname"><br><br>
@@ -48,23 +50,41 @@
             <input type="password" id="pass" name="pass"><br><br>
             <input style=" color:red" type="submit" value="Submit"><br><br><br>
           </form>
-        </div> 
+        </div>  -->
 
     </main>
     <footer>
 
-        &copy; 2021ASAC
+        
 
         <script>
 
-            let userName = prompt('what\'s Your Name ? ');
-            console.log('Welcome '+ userName);
-            alert('Welcome ' + userName);
-        
-            let age = prompt('what\'s Your Age ? ');
+// 'use strict';
+
+console.log("Hello");
+
+let userName = prompt('what\'s Your Name ? ');
+console.log('Welcome '+ userName);
+alert('Welcome ' + userName);
+
+let age = prompt('what\'s Your Age ? ');
             console.log('Your Age is : '+ age);
             alert('Hi ' + userName + ' Your Age is : '+ age);
-        
+
+            let Country = prompt('Where Are You From ? ');
+            console.log('Your Country: '+ Country);
+            alert('Hi ' + userName + ' Your Country is : '+ Country);  
+            
+            let sport = prompt('what\'s Your Favorite Sport ? ');
+            console.log('Your Country: '+ sport);
+            alert('Hi ' + userName + ' Your Country is : '+ sport); 
+
+            document.write("<hr>"+"<br>"+"<h4>"+ "Your Name : "+'<span>'+userName+'</span>'+"</h4>")
+            document.write("<hr>"+"<br>"+"<h4>"+ "Your Age : "+'<span>'+age+'</span>'+"</h4>")
+            document.write("<hr>"+"<br>"+"<h4>"+ "Your Country : "+'<span>'+Country+'</span>'+"</h4>")
+            document.write("<hr>"+"<br>"+"<h4>"+ "Your Favorite Sport : "+'<span>'+sport+'</span>'+"</h4>")
+
+            
         
         </script>
 
